@@ -18,7 +18,7 @@
             margin: 0;
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
-            background-image: url("./background2.png");
+            background-image: url("./space1.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -37,41 +37,17 @@
         font-weight: 800;
         letter-spacing: 2px;
 
-        background: linear-gradient(135deg, #00f5ff, #a855f7);
+        background: linear-gradient(135deg, #b3c41a, #749d14);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
         text-shadow:
-            0 0 10px rgba(0, 245, 255, 0.6),
-            0 0 20px rgba(0, 245, 255, 0.4),
-            0 0 40px rgba(168, 85, 247, 0.4);
+            0 0 10px rgba(217, 137, 61, 0.6),
+            0 0 20px rgba(222, 126, 62, 0.4),
+            0 0 40px rgba(122, 69, 16, 0.4);
 
         position: relative;
-        }
-
-        /* Cyberpunk glitch layers */
-        .hero h1::before,
-        .hero h1::after {
-            content: "Physics, Without The Headache";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            overflow: hidden;
-            background: linear-gradient(135deg, #00f5ff, #a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero h1::before {
-            text-shadow: -2px 0 #ff00ff;
-            animation: glitchTop 2.5s infinite linear alternate-reverse;
-        }
-
-        .hero h1::after {
-            text-shadow: 2px 0 #00ffff;
-            animation: glitchBottom 1.8s infinite linear alternate-reverse;
         }
 
         select, input[type="number"], input[type="range"] {
@@ -138,7 +114,7 @@
             opacity: 0;
             transform: translateY(70px);
             animation: dropdownFade 3.5s ease-out forwards;
-            animation-delay: 3s;
+            animation-delay: 2s;
         }
 
         #instruction-text {
@@ -166,24 +142,6 @@
     .ui-panel.show {
         opacity: 1;
         transform: translateY(0);
-    }
-
-    @keyframes glitchTop {
-        0% { clip-path: inset(0 0 90% 0); }
-        20% { clip-path: inset(10% 0 60% 0); }
-        40% { clip-path: inset(30% 0 40% 0); }
-        60% { clip-path: inset(20% 0 50% 0); }
-        80% { clip-path: inset(40% 0 30% 0); }
-        100% { clip-path: inset(0 0 90% 0); }
-    }
-
-    @keyframes glitchBottom {
-        0% { clip-path: inset(90% 0 0 0); }
-        20% { clip-path: inset(60% 0 10% 0); }
-        40% { clip-path: inset(40% 0 30% 0); }
-        60% { clip-path: inset(50% 0 20% 0); }
-        80% { clip-path: inset(30% 0 40% 0); }
-        100% { clip-path: inset(90% 0 0 0); }
     }
 
     </style>
